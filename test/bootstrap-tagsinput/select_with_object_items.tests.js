@@ -16,7 +16,7 @@ describe("bootstrap-tagsinput", function() {
           expect(this.$element.val()[0]).toBe("1");
         });
         it("tag's text should be the item's text", function() {
-          expect($('.tag', this.$sandbox).text()).toBe("some");
+          expect($('.tag', this.$sandbox).text()).toBe("someDelete some");
         });
 
         describe("change item's value and text and invoke 'refesh'", function() {
@@ -27,7 +27,7 @@ describe("bootstrap-tagsinput", function() {
           });
 
           it("should update tags's text", function() {
-            expect($('.tag', this.$sandbox).text()).toBe('changed');
+            expect($('.tag', this.$sandbox).text()).toBe('changedDelete some');
           });
           it("val() should return item's new value", function() {
             expect(this.$element.val()[0]).toBe("2");

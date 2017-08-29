@@ -22,7 +22,7 @@ describe("bootstrap-tagsinput", function() {
           expect(this.$element.val()).toBe("1");
         });
         it("tag's text should be the item's value", function() {
-          expect($('.tag', this.$sandbox).text()).toBe("1");
+          expect($('.tag', this.$sandbox).text()).toBe("1Delete 1");
         });
       });
     });
@@ -44,7 +44,7 @@ describe("bootstrap-tagsinput", function() {
           expect(this.$element.val()).toBe("1");
         });
         it("tag's text should be the item's value", function() {
-          expect($('.tag', this.$sandbox).text()).toBe("1");
+          expect($('.tag', this.$sandbox).text()).toBe("1Delete 1");
         });
       });
     });
@@ -62,7 +62,7 @@ describe("bootstrap-tagsinput", function() {
           expect(this.$element.val()).toBe("1");
         });
         it("tag's text should be the item's text", function() {
-          expect($('.tag', this.$sandbox).text()).toBe("some");
+          expect($('.tag', this.$sandbox).text()).toBe("someDelete some");
         });
 
         describe("change item and invoke 'refesh'", function() {
@@ -72,7 +72,7 @@ describe("bootstrap-tagsinput", function() {
           });
 
           it("should update tags's text", function() {
-            expect($('.tag', this.$sandbox).text()).toBe('changed');
+            expect($('.tag', this.$sandbox).text()).toBe('changedDelete some');
           });
           it("tag should still have remove button", function() {
             expect($('[data-role=remove]', this.$sandbox)[0]).not.toBeUndefined();
@@ -98,7 +98,7 @@ describe("bootstrap-tagsinput", function() {
           expect(this.$element.val()).toBe("1");
         });
         it("tag's text should be the item's value", function() {
-          expect($('.tag', this.$sandbox).text()).toBe("one");
+          expect($('.tag', this.$sandbox).text()).toBe("oneDelete one");
         });
 		it("tag's title should be the item's title", function() {
 		  expect($('.tag', this.$sandbox).attr('title')).toBe("number one");
