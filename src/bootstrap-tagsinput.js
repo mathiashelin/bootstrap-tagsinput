@@ -87,8 +87,9 @@
         return;
 
       // If SELECT but not multiple, remove current tag
-      if (self.isSelect && !self.multiple && self.itemsArray.length > 0)
+      if (self.isSelect && !self.multiple && self.itemsArray.length > 0) {
         self.remove(self.itemsArray[0]);
+      }
 
       if (typeof item === "string" && this.$element[0].tagName === 'INPUT') {
         var delimiter = (self.options.delimiterRegex) ? self.options.delimiterRegex : self.options.delimiter;
